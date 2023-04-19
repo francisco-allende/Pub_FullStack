@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model List<Client>
+
+<h1>Clientes</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr class="table-primary">
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aquí van las filas con los datos de la tabla -->
+        @foreach (var client in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => client.Id)</td>
+                <td>@Html.DisplayFor(x => client.Nombre)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

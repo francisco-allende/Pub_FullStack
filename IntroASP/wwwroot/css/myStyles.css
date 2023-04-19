@@ -1,0 +1,20 @@
+#containerSpinner{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.spinner{
+    height: 120px;
+    width: 120px;
+    border: 8px solid;
+    border-color: #d7a309 transparent rgb(8, 8, 8) transparent;
+    border-radius: 50%;
+    animation: spin 1.3s linear infinite;
+  }
+
+  .centrar{
+    text-align: center;
+}
+
+

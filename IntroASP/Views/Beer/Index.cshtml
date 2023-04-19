@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model List<Beer>
+
+<h1>Birras</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr class="table-primary">
+            <th scope="col">Id</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Estilo</th>
+            <th scope="col">Origen</th>
+            <th scope="col">Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aquí van las filas con los datos de la tabla -->
+        @foreach (var beer in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => beer.Id)</td>
+                <td>@Html.DisplayFor(x => beer.Marca)</td>
+                <td>@Html.DisplayFor(x => beer.Estilo)</td>
+                <td>@Html.DisplayFor(x => beer.Origen)</td>
+                <td>@Html.DisplayFor(x => beer.Precio)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
